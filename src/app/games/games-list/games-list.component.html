@@ -1,0 +1,12 @@
+<ng-container *ngIf="!games">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" height="200" />
+</ng-container>
+
+<div *ngFor="let game of games">
+    <p>
+        <img src={{game.coverUri}} height="200"/> <br>
+        Title: {{game.title}} <br>
+        {{game.releaseDate | date}} <br>
+        {{game.rating}}
+    </p>
+</div>
