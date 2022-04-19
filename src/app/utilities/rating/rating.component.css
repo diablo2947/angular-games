@@ -1,0 +1,6 @@
+.selected{
+    color: gold;
+}
+mat-icon{
+    cursor: pointer;
+}
