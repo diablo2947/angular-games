@@ -7,17 +7,22 @@ import { GamesListComponent } from './games/games-list/games-list.component';
 import { GenericListComponent } from './utilities/generic-list/generic-list.component';
 
 import { MaterialModule } from './material/material.module';
+import { MenuComponent } from './menu/menu.component';
+import { RatingComponent } from './utilities/rating/rating.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GamesListComponent,
-    GenericListComponent
+    GenericListComponent,
+    MenuComponent,
+    RatingComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
