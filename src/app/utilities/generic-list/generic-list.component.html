@@ -1,0 +1,12 @@
+<ng-container *ngIf="!list">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" height="200"
+        alt="god-of-war" />
+</ng-container>
+
+<ng-container *ngIf="list.length === 0">
+    <img src="https://c.tenor.com/oogtfsQRHkgAAAAM/lost-john-travolta.gif" alt="not-found">
+</ng-container>
+
+<div *ngIf="list.length > 0 && list">
+    <ng-content select="[content]"></ng-content>
+</div>

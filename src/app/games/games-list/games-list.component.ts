@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { gameDto } from 'src/app/data/gameDto';
+import { GenericListComponent } from 'src/app/utilities/generic-list/generic-list.component';
 
 @Component({
   selector: 'app-games-list',
@@ -14,6 +15,10 @@ export class GamesListComponent implements OnInit {
   }
 
   @Input()
-  games : [gameDto];
+  games: gameDto[];
+  
+  remove(index: number) {
+    this.games.splice(index,1)
+  }
 
 }
