@@ -1,14 +1,18 @@
 <app-generic-list [list]="games">
     <ng-container content>
-        <div *ngFor="let game of games; let index = index"  ngClass="games">
-            <p>
-                {{index}}) <br>
-                <img src={{game.coverUri}} height="200" /> <br>
-                Title: {{game.title}} <br>
-                {{game.releaseDate | date}} <br>
-                <app-rating [maxRating]="5"></app-rating><br>
-                <button (click)="remove(index)">Remove</button>
-            </p>
+        <div class="games-container">
+            <div *ngFor="let game of games; let index = index" ngClass="games">
+                <a>
+                    <img src={{game.coverUri}} height="200" /> </a>
+                <p><a>{{game.title}}</a></p>
+                <p><a href="">{{game.releaseDate | date}}</a></p>
+                <p>
+                    <app-rating [maxRating]="5"></app-rating><br>
+                </p>
+                <div><a mat-flat-button color="primary">Edit</a>
+                    <a mat-flat-button color="warn">Delete</a>
+                </div>
+            </div>
         </div>
     </ng-container>
 </app-generic-list>

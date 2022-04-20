@@ -16,8 +16,7 @@ import { RatingComponent } from './utilities/rating/rating.component';
     GamesListComponent,
     GenericListComponent,
     MenuComponent,
-    RatingComponent,
-    
+    RatingComponent    
   ],
   imports: [
     BrowserModule,

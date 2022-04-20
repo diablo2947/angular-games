@@ -27,6 +27,12 @@ export class AppComponent {
       
     ]
   }
+  title: string;
+
+  titleChange(event: EventTarget) {
+    this.title = (event as HTMLTextAreaElement).value;
+  }
+
   gamesReleasedThisYear : gameDto[];
   gamesComingSoon : gameDto[];
 }
