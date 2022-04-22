@@ -9,6 +9,11 @@ import { GenericListComponent } from './utilities/generic-list/generic-list.comp
 import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
 import { RatingComponent } from './utilities/rating/rating.component';
+import { HomeComponent } from './home/home.component';
+import { IndexGenresComponent } from './genres/index-genres/index-genres.component';
+import { CreateGenreComponent } from './genres/create-genre/create-genre.component';
+import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,12 +21,17 @@ import { RatingComponent } from './utilities/rating/rating.component';
     GamesListComponent,
     GenericListComponent,
     MenuComponent,
-    RatingComponent    
+    RatingComponent,
+    HomeComponent,
+    IndexGenresComponent,
+    CreateGenreComponent,
+    EditGenreComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
