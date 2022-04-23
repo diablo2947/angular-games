@@ -13,6 +13,6 @@ export class GenericListComponent implements OnInit {
   }
 
   @Input()
-  list = [];
+  list : any[] = [];
 
 }

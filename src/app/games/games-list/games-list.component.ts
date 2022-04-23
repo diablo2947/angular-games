@@ -15,7 +15,7 @@ export class GamesListComponent implements OnInit {
   }
 
   @Input()
-  games: gameDto[];
+  games: gameDto[] = [];
   
   remove(index: number) {
     this.games.splice(index,1)
