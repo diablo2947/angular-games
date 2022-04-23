@@ -14,6 +14,8 @@ import { IndexGenresComponent } from './genres/index-genres/index-genres.compone
 import { CreateGenreComponent } from './genres/create-genre/create-genre.component';
 import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CreateGameComponent } from './games/create-game/create-game.component';
+import { FormGamesComponent } from './games/form-games/form-games.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     IndexGenresComponent,
     CreateGenreComponent,
-    EditGenreComponent
+    EditGenreComponent,
+    CreateGameComponent,
+    FormGamesComponent
   ],
   imports: [
     BrowserModule,
