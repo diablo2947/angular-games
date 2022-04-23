@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { firstLetterUpperCase } from 'src/app/utilities/validators/firstLetterUpperCase';
 import { EventEmitter } from '@angular/core';
@@ -15,6 +15,9 @@ export class FormGamesComponent implements OnInit {
 
   form: FormGroup = new FormGroup({});
 
+  @Input()
+    model: gameDto = new gameDto();
+
   ngOnInit(): void {
     this.form = this.formBuilder.group({
       title: ['', {
@@ -22,6 +25,8 @@ export class FormGamesComponent implements OnInit {
         }]
     }
     )
+
+    if (this.model != undefined) this.form.patchValue(this.model);
   }
 
   @Output()

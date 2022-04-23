@@ -5,6 +5,7 @@ import { IndexGenresComponent } from './genres/index-genres/index-genres.compone
 import { CreateGenreComponent } from './genres/create-genre/create-genre.component';
 import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
 import { CreateGameComponent } from './games/create-game/create-game.component';
+import { EditGameComponent } from './games/edit-game/edit-game.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: "genres/edit/:id", component: EditGenreComponent },
   { path: "genres/create", component: CreateGenreComponent },
   { path: "games/create", component: CreateGameComponent },
+  { path: "games/edit/:id", component: EditGameComponent },
   { path: "**", redirectTo:""}
 ];
 

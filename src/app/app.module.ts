@@ -16,6 +16,7 @@ import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CreateGameComponent } from './games/create-game/create-game.component';
 import { FormGamesComponent } from './games/form-games/form-games.component';
+import { EditGameComponent } from './games/edit-game/edit-game.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FormGamesComponent } from './games/form-games/form-games.component';
     CreateGenreComponent,
     EditGenreComponent,
     CreateGameComponent,
-    FormGamesComponent
+    FormGamesComponent,
+    EditGameComponent
   ],
   imports: [
     BrowserModule,
